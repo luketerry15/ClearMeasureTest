@@ -1,14 +1,5 @@
 #include <stdio.h>
 
-
-void printNum(int val){
-	printf("%d\n", val);
-}
-
-void printWord(char* src){
-	printf("%s\n", src);
-}
-
 /*Takes 2 input values, and 2 words
   For every number from 100:
   1) if k is divisible by input value 1 then print word 1
@@ -29,13 +20,13 @@ void run(int val1, char* word1, int val2, char* word2){
 			printf("%s, %s\n", word1, word2);
 		}
 		else if (k % val1 == 0){
-			printWord(word1);
+			printf("%s\n", word1);
 		}
 		else if (k % val2 == 0){
-			printWord(word2);
+			printf("%s\n", word2);
 		}
 		else{
-			printNum(k);
+			printf("%d\n", k);
 		}
 	}
 }
